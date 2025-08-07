@@ -1,0 +1,52 @@
+body {
+  background: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg%20id%3D%22visual%22%20viewBox%3D%220%200%20900%20600%22%20width%3D%22900%22%20height%3D%22600%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20version%3D%221.1%22%3E%3Cpath%20d%3D%22M0%20133L82%20139L164%2061L245%20127L327%2079L409%20103L491%20145L573%20103L655%2061L736%20145L818%2067L900%20115L900%200L818%200L736%200L655%200L573%200L491%200L409%200L327%200L245%200L164%200L82%200L0%200Z%22%20fill%3D%22%235c6c6a%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20253L82%20271L164%20211L245%20235L327%20301L409%20373L491%20301L573%20295L655%20265L736%20289L818%20355L900%20253L900%20113L818%2065L736%20143L655%2059L573%20101L491%20143L409%20101L327%2077L245%20125L164%2059L82%20137L0%20131Z%22%20fill%3D%22%23769796%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20427L82%20415L164%20463L245%20457L327%20463L409%20463L491%20427L573%20439L655%20445L736%20481L818%20451L900%20463L900%20251L818%20353L736%20287L655%20263L573%20293L491%20299L409%20371L327%20299L245%20233L164%20209L82%20269L0%20251Z%22%20fill%3D%22%2386b2b4%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20517L82%20511L164%20565L245%20565L327%20505L409%20511L491%20499L573%20511L655%20511L736%20547L818%20511L900%20529L900%20461L818%20449L736%20479L655%20443L573%20437L491%20425L409%20461L327%20461L245%20455L164%20461L82%20413L0%20425Z%22%20fill%3D%22%23769796%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20601L82%20601L164%20601L245%20601L327%20601L409%20601L491%20601L573%20601L655%20601L736%20601L818%20601L900%20601L900%20527L818%20509L736%20545L655%20509L573%20509L491%20497L409%20509L327%20503L245%20563L164%20563L82%20509L0%20515Z%22%20fill%3D%22%235c6c6a%22%3E%3C/path%3E%3C/svg%3E");
+  background-size: cover;
+  background-attachment: fixed; /* Esta línea hace que el fondo quede quieto */
+}
+
+.container {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: 0.85rem;
+  }
+  th, td {
+    white-space: nowrap;
+  }
+}
+.custom-header {
+    width: 200px; /* Ajusta según lo necesites */
+    height: 200px;
+    background: linear-gradient(to right, #fdfdfd, #e0f0ff);
+    margin: 20px auto; /* centra horizontalmente */
+    padding: 20px;
+    text-align: center;
+    animation: fadeInDown 1s ease;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
